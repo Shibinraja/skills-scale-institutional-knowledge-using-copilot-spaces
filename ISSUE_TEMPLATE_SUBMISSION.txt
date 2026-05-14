@@ -1,0 +1,40 @@
+title: [Process Doc Update]: Create README for OctoAcme Project Management Docs with Process Summary and Links
+
+Process document: <new document>
+
+Content Summary:
+Create a README for the OctoAcme Project Management Docs that serves as an entry point and index for all process documentation. The README will include:
+- A brief overview of OctoAcme's project management approach and principles
+- A summary of the core project management processes
+- Organized links to all existing process documents in the docs/ folder
+- Quick reference guide for team members to find relevant documentation
+
+Rationale:
+This update is needed because:
+- Currently, process documentation is scattered across individual files with no central index or overview
+- New team members and stakeholders need a clear entry point to understand OctoAcme's PM approach
+- There is a gap in onboarding materials - a README would significantly reduce onboarding time
+- A centralized index improves documentation discoverability and maintainability
+- Aligns with the purpose of scaling institutional knowledge using Copilot Spaces
+
+Suggested Content:
+README.md should include:
+1. **Introduction**: Brief description of OctoAcme Project Management Docs
+2. **Core Principles**: Reference to core PM principles (customer-first, iterative delivery, clear ownership, data-informed, psychological safety)
+3. **Project Lifecycle Overview**: Quick summary of the 5-phase lifecycle (Initiation, Planning, Execution, Release, Close & Retrospective)
+4. **Process Documentation Index**:
+   - OctoAcme Project Management Overview
+   - Project Initiation Guide
+   - Project Planning
+   - Execution & Tracking
+   - Risk Management & Communication
+   - Release & Deployment Guide
+   - Retrospective & Continuous Improvement
+   - Roles and Personas
+5. **Quick Start Guide**: Which doc to read based on current project stage
+6. **Core Roles**: Brief summary of PM, PdM, Developer, QA, and Stakeholder roles
+
+Acceptance Criteria:
+☑ Content aligns with existing process docs
+☑ Update improves clarity or closes a documented gap
+☑ Proposed content has been reviewed with stakeholders (if needed)
