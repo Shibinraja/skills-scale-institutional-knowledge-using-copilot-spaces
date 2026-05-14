@@ -1,0 +1,42 @@
+name: "Create README for OctoAcme Project Management Docs"
+description: "Request to create a README that links to all project management process documents"
+title: "[Process Doc Update]: Create README for OctoAcme Project Management Docs with links to all docs"
+labels: ["documentation", "process improvement"]
+body:
+  - type: markdown
+    attributes:
+      value: "## Create README for OctoAcme Project Management Docs"
+  
+  - type: textarea
+    id: content_summary
+    attributes:
+      label: "Summary of New Content"
+      value: "Create a comprehensive README.md file for the OctoAcme Project Management Docs that includes:\n\n1. **Overview**: Brief introduction to OctoAcme's project management approach\n2. **Table of Contents**: Links to all process documents in the docs/ folder:\n   - octoacme-project-management-overview.md\n   - octoacme-project-initiation.md\n   - octoacme-project-planning.md\n   - octoacme-execution-and-tracking.md\n   - octoacme-risks-and-communication.md\n   - octoacme-release-and-deployment.md\n   - octoacme-retrospective-and-continuous-improvement.md\n   - octoacme-roles-and-personas.md\n3. **Process Summary**: Condensed summary of OctoAcme's core project management processes\n4. **Quick Navigation**: Easy access to key documents by role or lifecycle phase"
+    validations:
+      required: true
+
+  - type: textarea
+    id: rationale
+    attributes:
+      label: "Why is this update needed?"
+      value: "A README is needed to:\n- Provide new team members with a single entry point to understand OctoAcme's project management processes\n- Make all process documentation easily discoverable and well-organized\n- Establish a clear, centralized knowledge base for project management practices\n- Improve onboarding experience by consolidating scattered process information\n- Align with the Copilot Spaces objective to centralize institutional knowledge"
+    validations:
+      required: true
+
+  - type: textarea
+    id: example_content
+    attributes:
+      label: "Suggested Content (optional)"
+      value: "# OctoAcme Project Management Documentation\n\n## Overview\nOctoAcme follows a structured, customer-first approach to project management that emphasizes iterative delivery, clear ownership, and data-informed decisions. This documentation provides guidance for all project phases—from initiation through retrospectives.\n\n## Core Principles\n- **Customer-first**: Prioritize customer value and usability\n- **Iterative delivery**: Deliver small, testable increments\n- **Clear ownership**: Each project has named Project Manager and Product Lead\n- **Data-informed**: Measure impact and iterate based on evidence\n- **Psychological safety**: Encourage feedback and learning\n\n## Documentation by Lifecycle Phase\n\n### 1. Project Initiation\n📄 [Project Initiation Guide](./octoacme-project-initiation.md)\n- Validate business need and measurable outcome\n- Identify stakeholders and champions\n- Create lightweight Project One-pager\n- Decision gate for planning phase\n\n### 2. Project Planning\n📄 [Project Planning](./octoacme-project-planning.md)\n- Break work into shippable increments\n- Create prioritized backlog with acceptance criteria\n- Identify dependencies and risks\n- Establish Definition of Done\n\n### 3. Execution & Tracking\n📄 [Execution & Tracking Guide](./octoacme-execution-and-tracking.md)\n- Daily standups and team rhythm\n- Pull request and code review workflow\n- Quality and testing standards\n- Progress tracking and metrics\n\n### 4. Risk & Communication\n📄 [Risk Management & Communication](./octoacme-risks-and-communication.md)\n- Maintain risk register and escalation paths\n- Stakeholder communication templates\n- Incident communication playbook\n\n### 5. Release & Deployment\n📄 [Release & Deployment Guide](./octoacme-release-and-deployment.md)\n- Release types and pre-release requirements\n- Deployment checklist and verification\n- Rollback and incident playbook\n- Release notes template\n\n### 6. Retrospectives & Improvement\n📄 [Retrospective & Continuous Improvement](./octoacme-retrospective-and-continuous-improvement.md)\n- Capture learnings and action items\n- Running retrospective meetings\n- Track and measure improvements\n\n## Reference\n\n### Core Concepts\n📄 [Project Management Overview](./octoacme-project-management-overview.md)\n- Key roles and responsibilities\n- Core artifacts and lifecycle overview\n- Communication cadence\n\n### Roles & Personas\n📄 [Roles and Personas](./octoacme-roles-and-personas.md)\n- Developer responsibilities and goals\n- Product Manager responsibilities and goals\n- Project Manager responsibilities and goals\n\n## Quick Links by Role\n\n**For Project Managers:**\n- Start: [Project Initiation Guide](./octoacme-project-initiation.md)\n- Planning: [Project Planning](./octoacme-project-planning.md)\n- Daily: [Execution & Tracking Guide](./octoacme-execution-and-tracking.md)\n- Risks: [Risk Management & Communication](./octoacme-risks-and-communication.md)\n- Release: [Release & Deployment Guide](./octoacme-release-and-deployment.md)\n\n**For Product Managers:**\n- Start: [Project Initiation Guide](./octoacme-project-initiation.md) - Define success metrics\n- Planning: [Project Planning](./octoacme-project-planning.md) - Prioritize backlog\n- Overview: [Project Management Overview](./octoacme-project-management-overview.md)\n\n**For Developers:**\n- Planning: [Project Planning](./octoacme-project-planning.md) - Understand backlog and DoD\n- Execution: [Execution & Tracking Guide](./octoacme-execution-and-tracking.md) - PR workflow, testing\n- Release: [Release & Deployment Guide](./octoacme-release-and-deployment.md) - Pre-release requirements\n\n## Process Checklist for New Projects\n\n### Initiation\n- [ ] Project One-pager completed\n- [ ] Stakeholder alignment confirmed\n- [ ] Go/no-go decision made\n\n### Planning\n- [ ] Project kickoff held\n- [ ] Backlog prioritized and estimated\n- [ ] Release timeline defined\n- [ ] Definition of Done documented\n\n### Execution\n- [ ] Branching and PR conventions documented\n- [ ] CI configured\n- [ ] Regular demos scheduled\n- [ ] Risk register updated weekly\n\n### Release\n- [ ] Pre-release checklist completed\n- [ ] Deployment window scheduled\n- [ ] Rollback plan documented\n- [ ] Release notes drafted\n\n### Close\n- [ ] Retrospective held\n- [ ] Action items tracked\n- [ ] Learnings documented"
+
+  - type: checkboxes
+    id: acceptance_criteria
+    attributes:
+      label: "Acceptance Criteria"
+      description: "Check all that apply:"
+      options:
+        - label: "Content aligns with existing process docs"
+          required: true
+        - label: "Update improves clarity or closes a documented gap"
+          required: true
+        - label: "Proposed content has been reviewed with stakeholders (if needed)"
